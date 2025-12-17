@@ -390,7 +390,7 @@ const initFileHandler = (scene: Scene, events: Events, dropTarget: HTMLElement) 
         fileSelector = document.createElement('input');
         fileSelector.setAttribute('id', 'file-selector');
         fileSelector.setAttribute('type', 'file');
-        fileSelector.setAttribute('accept', '.ply,.splat,meta.json,.json,.webp,.ssproj,.sog,.lcc,.bin,.txt');
+        fileSelector.setAttribute('accept', '*');
         fileSelector.setAttribute('multiple', 'true');
 
         fileSelector.onchange = () => {
